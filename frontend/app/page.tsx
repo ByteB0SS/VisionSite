@@ -20,6 +20,19 @@ import {
 } from "@/components/ui/carousel";
 import SkillsAnimatedLogos from "@/components/SkillsLogos";
 import TechCarousel from "@/components/TechSlider";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiJavascript,
+  SiHtml5,
+  SiCss3,
+  SiPostgresql,
+  SiPrisma,
+  SiMysql,
+  SiNestjs,
+} from "react-icons/si";
 
 export default function Home() {
   const mensagesSlider = [
@@ -187,6 +200,81 @@ export default function Home() {
                 <SkillsAnimatedLogos/>
 
                 <TechCarousel/>
+              </CardContent>
+          </Card>
+
+
+          {/* Services */}
+
+          <Card className="mt-2.5">
+              <CardHeader>
+                <div className="flex justify-between">
+                  <CardTitle>Serviços</CardTitle>
+                  <BriefcaseBusiness size={17} className="text-green-600"></BriefcaseBusiness>
+                </div>
+
+                <CardDescription>
+                  Aqui, verás os serviços que podemos oferecer para nossos clientes
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent>
+                  <div className="flex flex-col gap-2.5">
+                    <Card className="hover:shadow-sm hover:scale-[101%] transition-all ">
+                      <CardHeader>
+                        <CardTitle>Front-end</CardTitle>
+
+                        <CardDescription>
+                          A Vision site pode ajudar-te com projectos front-end, com criatividade inovadoras, aplicando conceitos de ui e ux, usando tecnologias como next, react tailwind...
+                        </CardDescription>
+
+                        <CardContent>
+                          <div className="flex mt-5 justify-around ">
+                            <SiNextdotjs size={50} color=""/>
+                            <SiReact size={50} className="text-blac"/>
+                            <SiTailwindcss size={50}/>
+                          </div>
+                        </CardContent>
+                      </CardHeader>
+                    </Card>
+                    
+                    <Card className="hover:shadow-sm hover:scale-[101%] transition-all ">
+                      <CardHeader>
+                        <CardTitle>Back-end</CardTitle>
+
+                        <CardDescription>
+                          A Vision site pode ajudar-te com projectos front-end, com criatividade inovadoras, aplicando conceitos de ui e ux, usando tecnologias como next, react tailwind...
+                        </CardDescription>
+
+                        <CardContent>
+                          <div className="flex mt-5 justify-around ">
+                            <SiNestjs size={50} color=""/>
+                            <SiPrisma size={50} className="text-blac"/>
+                            <SiPostgresql size={50}/>
+                          </div>
+                        </CardContent>
+                      </CardHeader>
+                    </Card>
+                    
+                    <Card className="hover:shadow-sm hover:scale-[101%] transition-all ">
+                      <CardHeader>
+                        <CardTitle>Full-stack</CardTitle>
+
+                        <CardDescription>
+                          A Vision site pode ajudar-te com projectos Back-end, 
+                        </CardDescription>
+
+                        <CardContent>
+                          <div className="flex mt-5 justify-around ">
+                            <SiNextdotjs size={50} color=""/>   
+                            <SiNestjs size={50} color=""/>
+                            <SiPrisma size={50} className="text-blac"/>
+                          </div>
+                        </CardContent>
+                      </CardHeader>
+                    </Card>
+                    
+                  </div>
               </CardContent>
           </Card>
         </section>
