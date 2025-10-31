@@ -34,6 +34,7 @@ import {
   SiNestjs,
 } from "react-icons/si";
 
+
 export default function Home() {
   const mensagesSlider = [
     {
