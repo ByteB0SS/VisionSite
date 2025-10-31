@@ -32,7 +32,9 @@ export default function RootLayout({
       >
         <ThemeProvider defaultTheme="system" attribute={'class'} enableSystem>
           <SideBar/>
-          {children}
+          <div className=" flex justify-center p-4">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

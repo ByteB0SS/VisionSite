@@ -206,7 +206,7 @@ export default function Home() {
 
           {/* Services */}
 
-          <Card className="mt-2.5">
+          <Card className="mt-2.5" id="services">
               <CardHeader>
                 <div className="flex justify-between">
                   <CardTitle>Serviços</CardTitle>
